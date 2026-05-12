@@ -2117,8 +2117,12 @@ body.dark-mode .signature-stat {
   }
 
   .hero-title {
-    font-size: 2.6rem;
-    letter-spacing: 4px;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+  }
+
+  .hero-glass-panel {
+    transform: translateY(24px);
   }
 
   .section-title {
