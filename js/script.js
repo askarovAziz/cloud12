@@ -1,39 +1,3 @@
-const themeStorageKey = "cloud9-theme"
-
-const applyTheme = (theme, themeToggleButton) => {
-  const isDarkTheme = theme === "dark"
-  document.body.classList.toggle("dark-mode", isDarkTheme)
-  if (themeToggleButton) {
-    themeToggleButton.textContent = isDarkTheme ? "☀️" : "🌙"
-    themeToggleButton.setAttribute("aria-label", isDarkTheme ? "Switch to light mode" : "Switch to dark mode")
-  }
-}
-
-const initThemeToggle = () => {
-  const themeToggleButton = document.getElementById("themeToggle")
-  const savedTheme = localStorage.getItem(themeStorageKey)
-
-  if (savedTheme === "dark" || savedTheme === "light") {
-    applyTheme(savedTheme, themeToggleButton)
-  } else {
-    applyTheme("light", themeToggleButton)
-  }
-
-  if (themeToggleButton) {
-    themeToggleButton.addEventListener("click", () => {
-      const nextTheme = document.body.classList.contains("dark-mode") ? "light" : "dark"
-      applyTheme(nextTheme, themeToggleButton)
-      localStorage.setItem(themeStorageKey, nextTheme)
-    })
-  }
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", initThemeToggle)
-} else {
-  initThemeToggle()
-}
-
 const whatsappNumber = "971552881265"
 const telegramNumber = whatsappNumber
 

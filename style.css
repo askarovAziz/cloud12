@@ -1634,40 +1634,10 @@ body {
 }
 
 /* Dark Theme */
-body.dark-mode {
-  --color-primary: #1f1f1f;
-  --color-secondary: #1a2017;
-  --color-accent: #2f2f2f;
-  --color-background: #121611;
-  --color-text: #f4f6ef;
-  --color-text-light: #c0c7b2;
-  --color-border: #2b3425;
-}
 
-body.dark-mode .nav {
-  background: rgba(18, 22, 17, 0.95);
-  border-bottom-color: var(--color-border);
-}
 
-body.dark-mode .dropdown-menu {
-  background: rgba(22, 27, 20, 0.98);
-  border-color: var(--color-border);
-}
 
-body.dark-mode .service-card,
-body.dark-mode .blog-card,
-body.dark-mode .package-card,
-body.dark-mode .faq-item,
-body.dark-mode .stat-item,
-body.dark-mode .gallery-filter-section,
-body.dark-mode .about-section {
-  background: #161b14;
-}
 
-body.dark-mode .floating-theme-toggle {
-  background: #303d2a;
-  color: #fff;
-}
 
 .contact-form-title {
   font-size: 2.5rem;
@@ -1749,9 +1719,6 @@ body.dark-mode .floating-theme-toggle {
     transition: transform 0.3s ease;
   }
 
-  body.dark-mode .nav-menu {
-    background: #161b14;
-  }
 
   .nav-menu.active {
     transform: translateX(0);

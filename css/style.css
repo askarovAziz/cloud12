@@ -17,15 +17,6 @@
   --transition: all 0.3s ease;
 }
 
-body.dark-mode {
-  --color-primary: #1f1f1f;
-  --color-secondary: #242923;
-  --color-accent: #2f2f2f;
-  --color-background: #121512;
-  --color-text: #f4f5f1;
-  --color-text-light: #c0c3b8;
-  --color-border: #3d4438;
-}
 
 body {
   font-family: var(--font-primary);
@@ -53,10 +44,6 @@ body {
   border-bottom: 1px solid var(--color-border);
 }
 
-body.dark-mode .nav {
-  background: rgba(18, 22, 17, 0.95);
-  border-bottom-color: var(--color-border);
-}
 
 .nav-container {
   max-width: 1400px;
@@ -106,10 +93,6 @@ body.dark-mode .nav {
   z-index: 10;
 }
 
-body.dark-mode .dropdown-menu {
-  background: rgba(22, 27, 20, 0.98);
-  border-color: var(--color-border);
-}
 
 .nav-item:hover .dropdown-menu {
   display: flex;
@@ -376,24 +359,7 @@ body.dark-mode .dropdown-menu {
   background: var(--color-primary);
 }
 
-.floating-theme-toggle {
-  left: 24px;
-  bottom: 88px;
-  width: 52px;
-  height: 52px;
-  padding: 0;
-  border-radius: 50%;
-  border: 1px solid var(--color-border);
-  background: var(--color-primary);
-  color: #ffffff;
-  font-size: 1.4rem;
-  line-height: 1;
-  justify-content: center;
-}
 
-body.dark-mode .floating-theme-toggle {
-  color: #1b1d19;
-}
 
 .floating-number {
   font-weight: 400;
@@ -540,23 +506,9 @@ body.dark-mode .floating-theme-toggle {
   backdrop-filter: blur(6px);
 }
 
-body.dark-mode .signature-stats-card {
-  background: #1b211b;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
-}
 
-body.dark-mode .signature-stats-card::after {
-  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.08), transparent 55%);
-}
 
-body.dark-mode .signature-stats-image {
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.12);
-}
 
-body.dark-mode .signature-stat {
-  background: rgba(255, 255, 255, 0.06);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-}
 
 .signature-stat-number {
   font-size: 2.4rem;
@@ -1986,9 +1938,6 @@ body.dark-mode .signature-stat {
     transition: transform 0.3s ease;
   }
 
-  body.dark-mode .nav-menu {
-    background: #161b14;
-  }
 
   .nav-menu.active {
     transform: translateX(0);
@@ -2148,10 +2097,6 @@ body.dark-mode .signature-stat {
     left: 16px;
   }
 
-  .floating-theme-toggle {
-    left: 16px;
-    bottom: 76px;
-  }
 }
 
 /* Smooth Animations */
@@ -2368,17 +2313,7 @@ body.dark-mode .signature-stat {
   font-weight: 500;
 }
 
-body.dark-mode.legal-page {
-  background:
-    radial-gradient(circle at top right, rgba(143, 163, 122, 0.2), transparent 45%),
-    linear-gradient(180deg, #161a15 0%, var(--color-background) 70%);
-}
 
-body.dark-mode .legal-card,
-body.dark-mode .legal-faq-item {
-  background: rgba(255, 255, 255, 0.04);
-  border-color: var(--color-border);
-}
 
 @media (max-width: 768px) {
   .legal-section {
@@ -2500,14 +2435,7 @@ body.dark-mode .legal-faq-item {
   }
 }
 
-body.dark-mode .policy-badge {
-  background: rgba(119, 161, 143, 0.25);
-  color: #b4ead9;
-}
 
-body.dark-mode .policy-cta {
-  background: linear-gradient(100deg, #242424, #6c5530);
-}
 
 /* Terms page refresh */
 .terms-section {
@@ -2764,19 +2692,8 @@ body.dark-mode .policy-cta {
   }
 }
 
-body.dark-mode.disclaimer-page {
-  background: #151915;
-}
 
-body.dark-mode .disclaimer-hero {
-  background: radial-gradient(circle at 20% 25%, rgba(56, 89, 63, 0.85), rgba(56, 89, 63, 0) 55%),
-    radial-gradient(circle at 86% 20%, rgba(96, 78, 37, 0.7), rgba(96, 78, 37, 0) 55%),
-    linear-gradient(135deg, #151d15 0%, #2f291b 60%, #453620 100%);
-}
 
-body.dark-mode .disclaimer-item {
-  background: rgba(255, 255, 255, 0.05);
-}
 
 /* Cancellation & refund page layout */
 .cancellation-page {
@@ -2890,22 +2807,6 @@ body.dark-mode .disclaimer-item {
   }
 }
 
-body.dark-mode.cancellation-page {
-  background: #161b1a;
-}
 
-body.dark-mode .cancellation-card {
-  background: #1e2523;
-  border-color: #4f4d40;
-}
 
-body.dark-mode .cancellation-card h2 {
-  color: #f0f4ff;
-}
 
-body.dark-mode .cancellation-card p,
-body.dark-mode .cancellation-card li,
-body.dark-mode .cancellation-note,
-body.dark-mode .cancellation-home-link {
-  color: rgba(233, 237, 252, 0.86);
-}
