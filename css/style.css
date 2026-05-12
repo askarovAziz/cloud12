@@ -6,9 +6,9 @@
 }
 
 :root {
-  --color-primary: #4a5943;
+  --color-primary: #1f1f1f;
   --color-secondary: #e8e5dc;
-  --color-accent: #8b9474;
+  --color-accent: #2f2f2f;
   --color-background: #fdfcfa;
   --color-text: #2d2d2d;
   --color-text-light: #6b6b6b;
@@ -18,9 +18,9 @@
 }
 
 body.dark-mode {
-  --color-primary: #c4d1b6;
+  --color-primary: #1f1f1f;
   --color-secondary: #242923;
-  --color-accent: #8fa37a;
+  --color-accent: #2f2f2f;
   --color-background: #121512;
   --color-text: #f4f5f1;
   --color-text-light: #c0c3b8;
@@ -2223,7 +2223,7 @@ body.dark-mode .signature-stat {
 
 .btn-white:hover {
   background: rgba(255, 255, 255, 0.92);
-  color: #4f5c44;
+  color: #2e2e2e;
   transform: translateY(-1px);
 }
 
@@ -2414,8 +2414,8 @@ body.dark-mode .legal-faq-item {
   justify-content: center;
   border-radius: 999px;
   padding: 0.45rem 0.95rem;
-  background: #dfe7df;
-  color: #16514f;
+  background: #e6e6e6;
+  color: #2b2b2b;
   text-transform: uppercase;
   letter-spacing: 1.5px;
   font-size: 0.72rem;
@@ -2455,7 +2455,7 @@ body.dark-mode .legal-faq-item {
   border-radius: 22px;
   padding: 2.4rem 1.5rem;
   text-align: center;
-  background: linear-gradient(100deg, #216b5f, #7a6232);
+  background: linear-gradient(100deg, #2a2a2a, #7a6232);
   color: #fff;
 }
 
@@ -2502,7 +2502,7 @@ body.dark-mode .policy-badge {
 }
 
 body.dark-mode .policy-cta {
-  background: linear-gradient(100deg, #1e574f, #6c5530);
+  background: linear-gradient(100deg, #242424, #6c5530);
 }
 
 /* Terms page refresh */
@@ -2519,7 +2519,7 @@ body.dark-mode .policy-cta {
   background:
     radial-gradient(circle at 82% 30%, rgba(129, 108, 54, 0.45), transparent 38%),
     radial-gradient(circle at 22% 36%, rgba(57, 92, 63, 0.55), transparent 42%),
-    linear-gradient(120deg, #1f3525 0%, #2d4a34 42%, #3f3a23 100%);
+    linear-gradient(120deg, #1a1a1a 0%, #2a2a2a 42%, #3f3a23 100%);
 }
 
 .terms-hero-inner {
@@ -2560,8 +2560,8 @@ body.dark-mode .policy-cta {
   justify-content: center;
   border-radius: 999px;
   padding: 0.48rem 0.95rem;
-  background: #dfe7df;
-  color: #16514f;
+  background: #e6e6e6;
+  color: #2b2b2b;
   text-transform: uppercase;
   letter-spacing: 1.4px;
   font-size: 0.72rem;
@@ -2783,7 +2783,7 @@ body.dark-mode .disclaimer-item {
   padding: 5.5rem 0 13.5rem;
   background: radial-gradient(circle at 20% 22%, rgba(71, 102, 58, 0.8), rgba(71, 102, 58, 0) 52%),
     radial-gradient(circle at 86% 16%, rgba(128, 106, 54, 0.7), rgba(128, 106, 54, 0) 56%),
-    linear-gradient(135deg, #253120 0%, #423a22 58%, #56472a 100%);
+    linear-gradient(135deg, #232323 0%, #423a22 58%, #56472a 100%);
 }
 
 .cancellation-hero-content {

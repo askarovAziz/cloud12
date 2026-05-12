@@ -6,9 +6,9 @@
 }
 
 :root {
-  --color-primary: #4a5943;
+  --color-primary: #1f1f1f;
   --color-secondary: #e8e5dc;
-  --color-accent: #8b9474;
+  --color-accent: #2f2f2f;
   --color-background: #fdfcfa;
   --color-text: #2d2d2d;
   --color-text-light: #6b6b6b;
@@ -1635,9 +1635,9 @@ body {
 
 /* Dark Theme */
 body.dark-mode {
-  --color-primary: #d8e0c6;
+  --color-primary: #1f1f1f;
   --color-secondary: #1a2017;
-  --color-accent: #a5b488;
+  --color-accent: #2f2f2f;
   --color-background: #121611;
   --color-text: #f4f6ef;
   --color-text-light: #c0c7b2;
@@ -1958,7 +1958,7 @@ body.dark-mode .floating-theme-toggle {
 
 .btn-white:hover {
   background: rgba(255, 255, 255, 0.92);
-  color: #4f5c44;
+  color: #2e2e2e;
   transform: translateY(-1px);
 }
 
