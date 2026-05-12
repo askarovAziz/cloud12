@@ -1,4 +1,4 @@
-const whatsappNumber = "971552881265"
+const whatsappNumber = "971526542905"
 const telegramNumber = whatsappNumber
 
 const telegramLinks = document.querySelectorAll("a.floating-telegram")
