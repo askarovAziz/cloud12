@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cloud9spa.ae/sitemap.xml
+Host: cloud9spa.ae
