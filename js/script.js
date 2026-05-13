@@ -271,7 +271,7 @@ const galleryHeroPlayPause = document.getElementById("galleryHeroPlayPause")
 const galleryHeroMute = document.getElementById("galleryHeroMute")
 
 if (galleryHeroVideo && galleryHeroPlayPause && galleryHeroMute) {
-  galleryHeroVideo.muted = true
+  galleryHeroVideo.muted = false
 
   const syncVideoButtons = () => {
     galleryHeroPlayPause.textContent = galleryHeroVideo.paused ? "Play" : "Stop"
