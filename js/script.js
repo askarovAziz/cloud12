@@ -263,3 +263,36 @@ window.addEventListener("scroll", () => {
 
   lastScroll = currentScroll
 })
+
+
+// Gallery hero video controls
+const galleryHeroVideo = document.getElementById("galleryHeroVideo")
+const galleryHeroPlayPause = document.getElementById("galleryHeroPlayPause")
+const galleryHeroMute = document.getElementById("galleryHeroMute")
+
+if (galleryHeroVideo && galleryHeroPlayPause && galleryHeroMute) {
+  const syncVideoButtons = () => {
+    galleryHeroPlayPause.textContent = galleryHeroVideo.paused ? "Play" : "Stop"
+    galleryHeroPlayPause.setAttribute("aria-pressed", String(galleryHeroVideo.paused))
+    galleryHeroMute.textContent = galleryHeroVideo.muted ? "Unmute" : "Mute"
+    galleryHeroMute.setAttribute("aria-pressed", String(galleryHeroVideo.muted))
+  }
+
+  galleryHeroPlayPause.addEventListener("click", () => {
+    if (galleryHeroVideo.paused) {
+      galleryHeroVideo.play()
+    } else {
+      galleryHeroVideo.pause()
+    }
+    syncVideoButtons()
+  })
+
+  galleryHeroMute.addEventListener("click", () => {
+    galleryHeroVideo.muted = !galleryHeroVideo.muted
+    syncVideoButtons()
+  })
+
+  galleryHeroVideo.addEventListener("play", syncVideoButtons)
+  galleryHeroVideo.addEventListener("pause", syncVideoButtons)
+  syncVideoButtons()
+}
