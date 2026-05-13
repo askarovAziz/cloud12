@@ -805,6 +805,10 @@ body {
   margin-top: 80px;
 }
 
+.gallery-page-header {
+  height: 1000px;
+}
+
 .page-header-overlay {
   position: absolute;
   inset: 0;
@@ -2033,6 +2037,10 @@ body {
 }
 
 @media (max-width: 768px) {
+  .gallery-page-header {
+    height: 600px;
+  }
+
   .signature-highlight-grid,
   .packages-grid {
     grid-template-columns: 1fr;
@@ -2808,6 +2816,5 @@ body {
     font-size: 2.1rem;
   }
 }
-
 
 
