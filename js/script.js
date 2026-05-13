@@ -1,26 +1,4 @@
 const whatsappNumber = "971526542905"
-const telegramNumber = whatsappNumber
-
-const telegramLinks = document.querySelectorAll("a.floating-telegram")
-telegramLinks.forEach((link) => {
-  link.setAttribute("href", `https://t.me/+${telegramNumber}`)
-})
-
-const floatingContacts = document.querySelectorAll(".floating-contact")
-floatingContacts.forEach((contactWidget) => {
-  const toggleButton = contactWidget.querySelector(".floating-toggle")
-  if (!toggleButton) return
-
-  toggleButton.addEventListener("click", () => {
-    const isOpen = contactWidget.classList.toggle("open")
-    toggleButton.setAttribute("aria-expanded", String(isOpen))
-    const menu = contactWidget.querySelector(".floating-contact-menu")
-    if (menu) {
-      menu.setAttribute("aria-hidden", String(!isOpen))
-    }
-  })
-})
-
 // Mobile Menu Toggle
 const mobileMenuBtn = document.getElementById("mobileMenuBtn")
 const navMenu = document.getElementById("navMenu")
