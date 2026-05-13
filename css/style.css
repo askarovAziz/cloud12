@@ -298,18 +298,10 @@ body {
 }
 
 /* Floating Action Buttons */
-.floating-contact {
+.floating-action {
   position: fixed;
-  right: 24px;
   bottom: 24px;
   z-index: 1100;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.75rem;
-}
-
-.floating-action {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
@@ -330,51 +322,17 @@ body {
 }
 
 .floating-whatsapp {
+  right: 24px;
   background: #25d366;
-  border: none;
-  cursor: pointer;
-}
-
-.floating-toggle {
-  min-height: 52px;
-}
-
-.floating-whatsapp svg {
-  width: 22px;
-  height: 22px;
-  fill: currentColor;
-}
-
-.floating-contact-menu {
-  display: none;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
-}
-
-.floating-contact.open .floating-contact-menu {
-  display: flex;
-}
-
-.floating-contact-option {
-  background: var(--color-primary);
-  min-width: 130px;
-  justify-content: center;
-}
-
-.floating-telegram {
-  background: #229ed9;
 }
 
 .floating-call {
-  background: var(--color-primary);
+  left: 24px;
+  background: #1f1f1f;
 }
 
-
-
-.floating-number {
-  font-weight: 400;
-  opacity: 0.9;
+.floating-label {
+  white-space: nowrap;
 }
 
 /* About Section */
@@ -2107,9 +2065,16 @@ body {
     font-size: 0.9rem;
   }
 
-  .floating-contact {
-    right: 16px;
+  .floating-action {
     bottom: 16px;
+  }
+
+  .floating-call {
+    left: 16px;
+  }
+
+  .floating-whatsapp {
+    right: 16px;
   }
 
 }
