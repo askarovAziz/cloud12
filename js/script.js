@@ -271,6 +271,8 @@ const galleryHeroPlayPause = document.getElementById("galleryHeroPlayPause")
 const galleryHeroMute = document.getElementById("galleryHeroMute")
 
 if (galleryHeroVideo && galleryHeroPlayPause && galleryHeroMute) {
+  galleryHeroVideo.muted = true
+
   const syncVideoButtons = () => {
     galleryHeroPlayPause.textContent = galleryHeroVideo.paused ? "Play" : "Stop"
     galleryHeroPlayPause.setAttribute("aria-pressed", String(galleryHeroVideo.paused))
@@ -295,4 +297,11 @@ if (galleryHeroVideo && galleryHeroPlayPause && galleryHeroMute) {
   galleryHeroVideo.addEventListener("play", syncVideoButtons)
   galleryHeroVideo.addEventListener("pause", syncVideoButtons)
   syncVideoButtons()
+
+  galleryHeroVideo
+    .play()
+    .then(syncVideoButtons)
+    .catch(() => {
+      syncVideoButtons()
+    })
 }
